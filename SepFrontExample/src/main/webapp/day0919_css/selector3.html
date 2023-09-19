@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>자식 자손태그</title>
+<style>
+	/*li > span{color: blue;}*/
+	li[id="second"] {color: yellow;}
+	
+	li *{color:deeppink;} /*li밑에있는 모든자손태그*/
+	
+	p .a{color:blue;}
+	p.a{color:green;}
+</style>
+</head>
+<body>
+
+<p><a class ="a" href="#">TEXT</a></p>
+<p class="a">TEXT</p>
+<ul>
+	<li id="first"><strong>text<span>text</span></strong>siuuuuuuuuuuuu!</li>
+	<li id="second"><span>test</span>siuuuuuuuuuuuu!</li>
+	<li id="three">siuuuuuuuuuuuu!</li>
+	<li id="fourth">siuuuuuuuuuuuu!</li>
+	
+</ul>
+</body>
+</html>
