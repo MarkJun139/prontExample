@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>new document</title>
+<SCRIPT>
+	let scope = "global";
+	function f() {
+		//var scope; - 호이스팅
+		alert(scope);
+		var scope = "local";
+		alert(scope);
+	}
+	f();
+	
+
+	
+</script>
+</head>
+
+<body>
+
+</body>
+</html>

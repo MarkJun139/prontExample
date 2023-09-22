@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script>
+		let student = {name: "kim",
+			study: function(){alert(this.name + "은 ㄱ오부중!");},
+			play: () => alert("노는ㄴ중!")
+		};
+		student.study();
+		
+		let user = {name: "js", age: 20};
+		
+		document.write(typeof user + "<br>");
+		document.write(user.name + " what that "+ user.age);
+		
+		console.log(user);
+		document.write("<br>");
+	
+		document.write(user.name+ "<br>");
+		document.write(user['name']+ "<br>");
+		let p_n = 'age';
+		document.write(user[p_n]+ "<br>");
+		
+		for(u in user){ //객체 안에 있는 프로퍼티를 하나씩 꺼낸당
+			document.write(u+" : "+ user[u] + "<br>");
+		}
+		user.job = "programmer"
+		for(u in user){
+			document.write(u+" : "+ user[u] + "<br>");
+		}
+		
+		document.write("<br>");
+		delete user.job;
+		for (u in user){
+			document.write(u+" : " + user[u] + "<br>");
+		}
+		
+		
+		
+	</script>
+</body>
+</html>
